@@ -13,31 +13,31 @@ const MotionButton = motion.button as any;
 const notes = [
   {
     id: 1,
-    image: "../assets/smile1.png", 
+    image: "https://github.com/vivek-3004/images/blob/main/smile1.png?raw=true", 
     title: "Madam😁 jii Aapki Smile",
     text: "Like dekhona dekhona guys tumhari smile kitni cute lagti hai uper dekho pic me🧿🤭, and sometimes cool😎 aur Elegent, and jb tum heeeee karke hasti ho 8 😁🫣 and vo cute sa dimple Uffff Aayee Haaayeee. Pata, if subha subha me tumhara smily face dekhlu then literally Meri good morning ho jati hai 😁.(It's the first thing I want to see in the morning.)"
   },
   {
     id: 2,
-    image: "../assets/eyes.png", 
+    image: "https://github.com/vivek-3004/images/blob/main/eyes.png?raw=true", 
     title: "Madam jii 👀Aapki Eyes",
     text: "Your eyes Like inhe bhi dekhona dekhona guys like bs ab kisi ko possess kar lengi me tho ho chuka hu 🫣 like kaise hi na houuu... bakiyon ka nhi pata but such me your eyes are like uffff 🔥, you know pani aane ke baad or zada shiny ho jati hai 😅, but I don't like when you roing yess i know kabhi kabhi me bhi reason hota hu me try tho karta hu ki aise na ho but hi jata hai sorry 🥲 but I will still try my best to make you heehee heee more then roing 😅 mere dimag me jo aara hai sb kuch dale jara hu baad me mujhe batana maja aaya ki nhi 😁 I know bhut zada likh raha hu but shyad bore nhi hogi read karne me hehehe karna thik 🫣😁😁."
   },
   {
     id: 3,
-    image: "../assets/kindness.png", 
+    image: "https://github.com/vivek-3004/images/blob/main/kindness.png?raw=true", 
     title: "Choti Bachi Aapki Kindness😇",
     text: "Tum sbka dhyan rakhti ho sbki care karti ho (na! nahi mt bolo) karti ho bs khud hi nhi karti 😤. Tum sbke bare me sochti ho but aapna dhyan bhi rakha karo madam, tum sbke face pe smile lati mere tho bhut zada ekdm zada. Tum bhut special ho samjhi ☺️ You have a heart of gold that makes everyone feel special. Tumhari presence hi meri life ko better banati hai. I am grateful for every moment we share and moment we will see😎. Aap jaisi ho bas aisi hi raho, kyuki aap perfect ho (mere liye)😁"  
   },
   {
     id: 4,
-    image: "../assets/strength.png",
+    image: "https://github.com/vivek-3004/images/blob/main/strength.png?raw=true",
     title: "Aap Bhut Strong Hain Madam😎",
     text: "Hey i know tum bhut strong ho😎 but hamesha strong na raha karo 😅 i mean sara load aapne uper mt liya karo.Tumne bhut kuch saha hai jhela hai like life me itni sari problems aayi but tumne kabhi give up nhi kiya🥹, haa tumne bs different ways se solve Kiya, even mujhe bhi jhela mera pglpn bhi saha 😅. Khud tention me hone ke baad bhi mujhe sambhala. Tumhari AURA bhut different hai strong hai and such me when i see your pair meri sadness low feeling chali jati hai like gayb. You are built different madam jii, maata ji ne bhut sochne ke baad banaya hoga 🤭.You are stronger than you know. I'm so proud of you choti bachi😁."
   },
   {
     id: 5,
-    image: "../assets/shukriya.png",
+    image: "https://github.com/vivek-3004/images/blob/main/shukriya.png?raw=true",
     title: "Shukriya Choti Bachi🥹",
     text: "1 2 3!!! shukriya for being born like such me shukriya, shukriya meri life me aane ke liye, shukriya mere har pagalpan sehne ke liye, shukriya mere breakdown hone pe mujhe sambhalne ke liye, shukriya mera sath dene ke liye, shukriya meri itni batamizi jhelne ke liye, shukriya mujhe motivate karne ke liye, shukriya meri zid jheli easy thodi na hai, shukriya for being you 🥺 and shukriya bhut bhut zada ekdm sara shukriya itna sara ki bhut sara, ha I know kuch bhi bol raha hu but such me bhut bhut bhut bhut bhu.....ttttt sara shukriya Pani pani hogayi me tho 😂. And You Can Slay In Any LOOK Sometimes Cool, Stunning, Gorgeous, Elegant bhi aur Classy, Bold, and Perfect, uper wali pic me dekho😎"
   }
