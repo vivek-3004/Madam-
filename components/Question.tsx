@@ -1,0 +1,229 @@
+import React, { useState, useRef } from 'react';
+import { motion } from 'framer-motion';
+import { Heart, ArrowRight, BellRing, Mail, Phone } from 'lucide-react';
+import TypingText from './TypingText';
+import emailjs from "@emailjs/browser";
+
+
+interface QuestionProps {
+  onNext: () => void;
+}
+
+// Cast motion components to any to avoid TypeScript errors with missing props
+const MotionDiv = motion.div as any;
+const MotionButton = motion.button as any;
+
+const Question: React.FC<QuestionProps> = ({ onNext }) => {
+  const [accepted, setAccepted] = useState(false);
+  const [noBtnPosition, setNoBtnPosition] = useState({ x: 0, y: 0 });
+  const [isNotifying, setIsNotifying] = useState(false);
+  const [notified, setNotified] = useState(false);
+  
+  const moveButton = () => {
+    // Dynamic limits based on screen size to prevent overflow
+    // Assuming button width approx 160px (w-40)
+    const buttonWidth = 160; 
+    const isMobile = typeof window !== 'undefined' ? window.innerWidth < 768 : false;
+    
+    // Calculate max safe offset from center
+    // We want the button to stay within the viewport.
+    // Container is centered. Max offset is (ViewportW/2) - (ButtonW/2) - Padding
+    const viewportW = typeof window !== 'undefined' ? window.innerWidth : 360;
+    const availableX = (viewportW / 2) - (buttonWidth / 2) - 20; // 20px safe margin
+    
+    // Ensure we have at least some room to move. 
+    const limitX = Math.max(60, availableX);
+    const limitY = isMobile ? 100 : 150;
+
+    const currentX = noBtnPosition.x;
+    const currentY = noBtnPosition.y;
+
+    let newX, newY;
+    
+    // STRATEGY: Jump to the opposite side to guarantee we clear the cursor.
+    // If currently on Right (>0), jump Left. If Left (<0), jump Right.
+    // If near 0, pick random.
+    
+    const minJumpX = 60; // Minimum horizontal jump distance
+    const minJumpY = 40; // Minimum vertical jump distance
+
+    // X Axis Logic
+    if (currentX >= 0) {
+        // Jump to Negative (Left)
+        // Range: [-limitX, -minJumpX]
+        newX = -Math.random() * (limitX - minJumpX) - minJumpX;
+    } else {
+        // Jump to Positive (Right)
+        // Range: [minJumpX, limitX]
+        newX = Math.random() * (limitX - minJumpX) + minJumpX;
+    }
+
+    // Y Axis Logic - similar quadrant flipping to ensure diagonal movement often
+    if (currentY >= 0) {
+         newY = -Math.random() * (limitY - minJumpY) - minJumpY;
+    } else {
+         newY = Math.random() * (limitY - minJumpY) + minJumpY;
+    }
+
+    setNoBtnPosition({ x: newX, y: newY });
+  };
+
+  const handleYes = () => {
+  sendNotification("User clicked YES 💖");
+  setIsNotifying(true);
+
+  setTimeout(() => {
+    setIsNotifying(false);
+    setNotified(true);
+    setAccepted(true);
+  }, 2500);
+};
+
+
+  const sendNotification = (action: string) => {
+  emailjs.send(
+    "service_8pzf8eu",
+    "template_qugvdxv",
+    {
+      action: action,
+      time: new Date().toString()
+    },
+    "rvVONttfVUpZ2ly6Y"
+  ).then(
+    () => console.log("Email sent"),
+    (err) => console.error("Failed...", err)
+  );
+};
+
+
+  if (accepted) {
+    return (
+      <div className="flex-1 flex flex-col items-center justify-center p-6 bg-rose-50 text-rose-900 text-center min-h-[100dvh]">
+        <MotionDiv
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ type: 'spring', duration: 0.8 }}
+            className="mb-8 text-rose-500"
+        >
+            <Heart className="w-[100px] h-[100px] md:w-[120px] md:h-[120px]" fill="currentColor" />
+        </MotionDiv>
+
+        {notified && (
+            <MotionDiv 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mb-6 flex flex-col items-center gap-2 bg-green-50 text-green-700 px-6 py-4 rounded-xl shadow-sm border border-green-200"
+            >
+                <div className="flex items-center gap-2 font-semibold">
+                    <BellRing size={18} />
+                    <span>Notification Sent!</span>
+                </div>
+                <div className="text-xs text-green-600 space-y-1">
+                   <div className="flex items-center gap-1 justify-center"><Phone size={10} /> 7208628028</div>
+                   <div className="flex items-center gap-1 justify-center"><Mail size={10} /> forworkonly3004@gmail.com</div>
+                </div>
+            </MotionDiv>
+        )}
+
+        <h1 className="text-3xl md:text-6xl font-handwriting mb-6 text-rose-600">
+            You will always be my priority
+        </h1>
+        <div className="min-h-[60px]">
+            <TypingText 
+                text="I promise to make you happy, every single day. Thank you for saying yes." 
+                className="text-lg md:text-xl text-rose-400 mb-12 max-w-lg mx-auto"
+                speed={30}
+                delay={500}
+            />
+        </div>
+
+        <MotionButton
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2.5 }}
+            onClick={onNext}
+            className="bg-rose-500 text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-rose-600 transition-colors shadow-lg shadow-rose-200"
+        >
+            Continue
+            <ArrowRight size={20} />
+        </MotionButton>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex-1 flex flex-col items-center justify-center p-4 md:p-8 bg-rose-50 min-h-[100dvh] overflow-y-auto">
+      <MotionDiv
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="z-10 text-center w-full max-w-2xl flex flex-col items-center py-10"
+      >
+        <h2 className="text-3xl md:text-5xl font-handwriting text-rose-600 mb-10 md:mb-16 leading-tight">
+          Madam jii, Will You Be My Wife?
+        </h2>
+
+        {/* Container for buttons to provide a stable reference frame */}
+        <div className="relative w-full min-h-[250px] flex justify-center items-center">
+          {isNotifying ? (
+             <MotionDiv 
+                initial={{ opacity: 0 }} 
+                animate={{ opacity: 1 }}
+                className="flex flex-col items-center text-rose-500"
+             >
+                <div className="w-10 h-10 border-4 border-rose-300 border-t-rose-600 rounded-full animate-spin mb-4" />
+                <p className="font-semibold">Sending happy news...</p>
+                <p className="text-xs text-rose-400 mt-1">Notifying 7208628028 & forworkonly3004@gmail.com</p>
+             </MotionDiv>
+          ) : (
+             <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 w-full relative">
+                <MotionButton
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={handleYes}
+                    className="bg-rose-500 hover:bg-rose-600 text-white text-xl font-bold px-8 py-4 rounded-full shadow-lg shadow-rose-200 transition-all z-20 w-40 md:w-auto"
+                >
+                    YES
+                </MotionButton>
+
+                {/* No Button - Constrained movement with smooth spring animation */}
+                <MotionButton
+                    animate={{ x: noBtnPosition.x, y: noBtnPosition.y }}
+                    transition={{ type: "spring", stiffness: 400, damping: 25 }} // Slightly faster spring
+                    onMouseEnter={moveButton}
+                    onMouseMove={moveButton} // Added for better tracking
+                    // For mobile tap interactions
+                    onTouchStart={(e: any) => { 
+                         moveButton(); 
+                    }}
+                    className="bg-stone-300 text-stone-600 text-xl font-bold px-8 py-4 rounded-full hover:bg-stone-400 w-40 md:w-auto cursor-pointer"
+                >
+                    NO
+                </MotionButton>
+             </div>
+          )}
+        </div>
+        
+        {/* Not Ready Button - Now styled as a proper button */}
+        <MotionDiv
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 3 }}
+            className="mt-4 md:mt-8"
+        >
+            <button 
+                onClick={() => {
+                  sendNotification("User clicked Skip → Continue 😶");
+                  onNext();
+                }}
+                className="border border-stone-300 bg-white/50 hover:bg-white text-stone-500 hover:text-stone-700 px-6 py-2 rounded-full text-sm font-medium transition-all shadow-sm flex items-center gap-2"
+            >
+                Koi baat nhi aage aajao.
+                <ArrowRight size={14} />
+            </button>
+        </MotionDiv>
+      </MotionDiv>
+    </div>
+  );
+};
+
+export default Question;
