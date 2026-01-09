@@ -44,7 +44,7 @@ const Home: React.FC<HomeProps> = ({ onNext }) => {
             className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-rose-200 shadow-lg mb-6 shrink-0 relative"
         >
             <img 
-                src="../assets/choti bachi.png" 
+                src="https://github.com/vivek-3004/images/blob/main/choti%20bachi.png?raw=true" 
                 alt="Birthday Girl" 
                 className="w-full h-full object-cover"
             />
