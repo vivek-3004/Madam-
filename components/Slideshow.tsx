@@ -13,98 +13,98 @@ const MotionButton = motion.button as any;
 const images = [
   {
     id: 1,
-    src: "/assets/memories/1.jpg",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/1.jpg?raw=true",
     caption: "The first🤭pic sent by you"
   },
   {
     id: 2,
-    src: "/assets/memories/2.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/2.png?raw=true",
     caption: "yrrr tum ho like ufff😍"
   },
   {
     id: 3,
-    src: "/assets/memories/3.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/3.png?raw=true",
     caption: "Mujhe yaad hai dance😳🫣🔥"
   },
   {
     id: 4,
-    src: "/assets/memories/4.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/4.png?raw=true",
   caption: "Adorable Look😚"
   },
   {
     id: 5,
-    src: "/assets/memories/5.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/5.png?raw=true",
     caption: "Perfect Look😎"
   },
   {
     id: 6,
-    src: "/assets/memories/6.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/6.png?raw=true",
     caption: "CHOTI BACHI 🤭🤩"
   },
   {
     id: 7,
-    src: "/assets/memories/7.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/7.png?raw=true",
     caption: "Frok tumpe achi lagti hai😎"
   },
   {
     id: 8,
-    src: "/assets/memories/8.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/8.png?raw=true",
     caption: "Cute Tho Tum Ho🫣"
   },
   {
     id: 9,
-    src: "/assets/memories/9.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/9.png?raw=true",
     caption: "Real Apsara 😇"
   },
   {
     id: 10,
-    src: "/assets/memories/10.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/10.png?raw=true",
     caption: "Eyes nose lips everything😌"
   },
   {
     id: 11,
-    src: "/assets/memories/11.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/11.png?raw=true",
     caption: "Dimple Wali Smile🤭"
   },
   {
     id: 12,
-    src: "/assets/memories/12.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/12.png?raw=true",
     caption: "You in SARI😍😳"
   },
   {    id: 13,
-    src: "/assets/memories/13.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/13.png?raw=true",
     caption: "sharara me mast lag rahi ho🤩"
   },
   {    id: 14,
-    src: "/assets/memories/14.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/14.png?raw=true",
     caption: "Modeling Kar Sakti ho🔥"
   },
   {    id: 15,
-    src: "/assets/memories/15.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/15.png?raw=true",
     caption: "Tumhari Smile🥰"
   },
   {    id: 16,
-    src: "/assets/memories/16.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/16.png?raw=true",
     caption: "(Fav)Mene Isse Bhut Br Dekha hai🫣"
   },  
   {    id: 17,
-    src: "/assets/memories/17.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/17.png?raw=true",
     caption: "Cute lag rahi ho🧿"
   },
   {    id: 18,
-    src: "/assets/memories/18.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/18.png?raw=true",
     caption: "Colourfull Universe(You)🌈"
   },
   {    id: 19,
-    src: "/assets/memories/19.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/19.png?raw=true",
     caption: "THE GODDESS🧎🏼"
   },
   {    id: 20,
-    src: "/assets/memories/20.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/20.png?raw=true",
     caption: "Ufff Tumhari Looks😚"
   },
   {    id: 21,
-    src: "/assets/memories/21.png",
+    src: "https://github.com/vivek-3004/images/blob/main/memories/21.png?raw=true",
     caption: "Tum teenage me bhi cute thi😜"
   }
 ];
