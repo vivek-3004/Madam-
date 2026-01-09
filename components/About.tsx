@@ -21,7 +21,7 @@ const notes = [
     id: 2,
     image: "https://github.com/vivek-3004/images/blob/main/eyes.png?raw=true", 
     title: "Madam jii 👀Aapki Eyes",
-    text: "Your eyes Like inhe bhi dekhona dekhona guys like bs ab kisi ko possess kar lengi me tho ho chuka hu 🫣 like kaise hi na houuu... bakiyon ka nhi pata but such me your eyes are like uffff 🔥, you know pani aane ke baad or zada shiny ho jati hai 😅, but I don't like when you roing yess i know kabhi kabhi me bhi reason hota hu me try tho karta hu ki aise na ho but hi jata hai sorry 🥲 but I will still try my best to make you heehee heee more then roing 😅 mere dimag me jo aara hai sb kuch dale jara hu baad me mujhe batana maja aaya ki nhi 😁 I know bhut zada likh raha hu but shyad bore nhi hogi read karne me hehehe karna thik 🫣😁😁."
+    text: "Your eyes Like inhe bhi dekhona dekhona guys like bs ab kisi ko possess kar lengi me tho ho chuka hu 🫣 like kaise hi na houuu... bakiyon ka nhi pata but such me your eyes are like uffff 🔥, you know pani aane ke baad or zada shiny ho jati hai 😅, but I don't like when you roing yess i know kabhi kabhi me bhi reason hota hu me try tho karta hu ki aise na ho but hi jata hai sorry 🥲 but I will still try my best to make you heehee heee more then roing 😅 mere dimag me jo aara hai sb kuch dale jara hu baad me mujhe batana maja aaya ki nhi 😁 I know bhut zada likh raha hu but shyad bore nhi hogi read karne me hehehe karna thik 🫣😁chotu sa song Your eyes got my heart I'm falling for you You're messing with my heart and I still wanna love you I wanna spend my life drowning in your eyes it's my only prayer😁."
   },
   {
     id: 3,
