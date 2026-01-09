@@ -35,24 +35,25 @@ const Sorry: React.FC<SorryProps> = ({ onRestart }) => {
         className="max-w-xl text-center z-10"
       >
         <h2 className="text-4xl md:text-6xl font-handwriting mb-8 text-indigo-200">
-            <TypingText text="I'm Sorry" speed={150} />
+            <TypingText text="Hey Sorry😔" speed={150} />
         </h2>
         
         <div className="space-y-6 text-lg text-indigo-200/80 font-light leading-relaxed mb-12">
           <MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
-            For the times I wasn't there when you needed me.
+            Because mene but pareshan kiya irritate kiya like pura pagal kardiya khud overthing karke tumhe hurt kiya.
           </MotionP>
           <MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }}>
-            For the moments I misunderstood.
+            Meri wajah se tumhari aakhon me aasu aaye🙂filmy lag raha hoga but such me sorry🥺.
           </MotionP>
           <MotionP initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3 }}>
-            For everything that ever made you frown.
+            Sorry uske har ek chiz ya harkate ke liye jisse tumhe hurt hua😔.
           </MotionP>
           <MotionP 
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 4 }}
             className="text-white font-medium text-xl pt-4"
           >
-            I want to make it right, forever.
+            I promise you💕 I will always disturb you, but only with all love💕😅 and care i have.
+            Once Again Happy Birthday Choti Cachi, And ENJOY karna thik now its your day🤩🥳.
           </MotionP>
         </div>
 
@@ -67,7 +68,7 @@ const Sorry: React.FC<SorryProps> = ({ onRestart }) => {
                 className="border border-indigo-700 text-indigo-300 hover:text-white hover:border-indigo-500 hover:bg-indigo-900/50 px-6 py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2"
             >
                 <CalendarHeart size={18} />
-                Last Year Page
+                Last Year wala😅
             </button>
             
             <button
@@ -75,7 +76,7 @@ const Sorry: React.FC<SorryProps> = ({ onRestart }) => {
                 className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-indigo-900/50"
             >
                 <RefreshCw size={18} />
-                See Again
+                Firse dekhna hai😁??
             </button>
         </MotionDiv>
       </MotionDiv>
