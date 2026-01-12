@@ -13,10 +13,13 @@ const MotionDiv = motion.div as any;
 
 const App: React.FC = () => {
   const [view, setView] = useState<PageView>(PageView.HOME);
+  const [playMusic, setPlayMusic] = useState(false);
 
   const handleNext = (nextView: PageView) => {
-    setView(nextView);
-  };
+  setPlayMusic(true);
+  setView(nextView);
+};
+
 
   const handleRestart = () => {
     setView(PageView.HOME);
@@ -49,6 +52,8 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-[100dvh] w-full relative bg-[#faf5f5] overflow-hidden">
+      <BackgroundMusic play={playMusic} />
+
       <AnimatePresence mode="wait">
         <MotionDiv
           key={view}
