@@ -60,7 +60,7 @@ const Home: React.FC<HomeProps> = ({ onNext }) => {
         </div>
         <div>
           <TypingText
-            text="You Are Special For Me"
+            text="You Are Queen, Enchantress, Goddess, Choti Bachi, Madam Ji, Pookie bhi🤭, Magic bhi Ho And You Are Special For Me"
             className="text-xl italic text-rose-300/80"
             delay={0}
             speed={40}
