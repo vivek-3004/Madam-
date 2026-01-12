@@ -15,7 +15,7 @@ const notes = [
     id: 1,
     image: "https://github.com/vivek-3004/images/blob/main/smile1.png?raw=true", 
     title: "Madam😁 jii Aapki Smile",
-    text: "Like dekhona dekhona guys tumhari smile kitni cute lagti hai uper dekho pic me🧿🤭, and sometimes cool😎 aur Elegent, and jb tum heeeee karke hasti ho 8 😁🫣 and vo cute sa dimple Uffff Aayee Haaayeee. Pata, if subha subha me tumhara smily face dekhlu then literally Meri good morning ho jati hai 😁.(It's the first thing I want to see in the morning.)"
+    text: "Like dekhona dekhona guys tumhari smile kitni cute lagti hai uper dekho pic me🧿🤭, and sometimes cool😎 aur Elegent, and jb tum heeeee karke hasti ho 8 😁🫣 and vo cute sa dimple Uffff Aayee Haaayeee, And literally tumhare lips kitne perfect shaped hai yrr😳like log obviously eyes me kho jate hai but lips bhi bhut sundar hai tasty bhi lagti hai 😋 sorry🫣 thodi si masti now hehehehehehe karo🥳. Pata, if subha subha me tumhara smily face dekhlu then literally Meri good morning ho jati hai 😁.(It's the first thing I want to see in the morning.)"
   },
   {
     id: 2,
