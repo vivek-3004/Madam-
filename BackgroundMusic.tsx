@@ -9,7 +9,7 @@ const BackgroundMusic: React.FC<Props> = ({ play }) => {
 
   useEffect(() => {
     if (!audioRef.current) {
-      audioRef.current = new Audio(require(""));
+      audioRef.current = new Audio(require("https://github.com/vivek-3004/Madam-/raw/refs/heads/main/assets/sound/music.mp3"));
       audioRef.current.loop = true;
       audioRef.current.volume = 0.5;
     }
