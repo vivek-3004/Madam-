@@ -7,6 +7,8 @@ import Slideshow from './components/Slideshow';
 import Wine from './components/Wine';
 import Sorry from './components/Sorry';
 import Question from './components/Question';
+import BackgroundMusic from "./BackgroundMusic";
+
 
 // Cast motion component to any to avoid TypeScript errors with missing props in current setup
 const MotionDiv = motion.div as any;
