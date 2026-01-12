@@ -9,7 +9,7 @@ const BackgroundMusic: React.FC<Props> = ({ play }) => {
 
   useEffect(() => {
     if (!audioRef.current) {
-      audioRef.current = new Audio(require("https://drive.google.com/file/d/1YgUHT4zuONYvwPBo0VIsDzEE9k4R7fK6/view?usp=sharing"));
+      audioRef.current = new Audio(require("./assets/sound/music.mp3"));
       audioRef.current.loop = true;
       audioRef.current.volume = 0.5;
     }
