@@ -8,6 +8,7 @@ import Wine from './components/Wine';
 import Sorry from './components/Sorry';
 import Question from './components/Question';
 import BackgroundMusic from "./BackgroundMusic";
+import SecretMessage from './components/SecretMessage';
 
 
 // Cast motion component to any to avoid TypeScript errors with missing props in current setup
@@ -45,8 +46,13 @@ const App: React.FC = () => {
       case PageView.QUESTION:
         // After accepting, we move to the final Sorry page
         return <Question onNext={() => handleNext(PageView.SORRY)} />;
+      case PageView.SECRET:
+        return <SecretMessage onNext={() => handleNext(PageView.SORRY)} />;
       case PageView.SORRY:
-        return <Sorry onRestart={handleRestart} />;
+        return <Sorry 
+          onRestart={handleRestart} 
+          onSecret={() => handleNext(PageView.SECRET)} 
+        />;
       default:
         return <Home onNext={() => handleNext(PageView.ABOUT)} />;
     }
