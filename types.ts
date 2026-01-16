@@ -4,7 +4,8 @@ export enum PageView {
   SLIDESHOW = 'SLIDESHOW',
   WINE = 'WINE',
   SORRY = 'SORRY',
-  QUESTION = 'QUESTION'
+  QUESTION = 'QUESTION',
+  SECRET = 'SECRET'
 }
 
 export interface BaseProps {
