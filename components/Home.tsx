@@ -75,7 +75,7 @@ const Home: React.FC<HomeProps> = ({ onNext }) => {
             className="text-lg md:text-xl text-stone-600 mb-8 leading-relaxed max-w-md"
         >
           Tumhara Birthday hai aaj Mere liye bhi bahut special din hai. Like last year jaise hi I don't know what to say because bhut kuch aara hai mere chotu se dimag me, mene last year jaise hi is baar bhi page banaya, I know baar baar same chizein uske liye sorry but last year se thoda acha banane ki koshish ki hai jo bhi  tho chalo aage dekhte hai chotiii bachiiii 😁.
-          Today is all about you. I've put together a little journey to show you how much you mean to me.
+          Today is all about you. I've put together a little journey to show you how much you mean to me. If spelling ulti pulti ho tho samjh lena sorry🥲
         </MotionP>
         
         <MotionButton
