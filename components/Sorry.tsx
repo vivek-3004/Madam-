@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
-import { RefreshCw, CalendarHeart, key } from 'lucide-react';
+import { RefreshCw, CalendarHeart, Key } from 'lucide-react';
 import TypingText from './TypingText';
 
 interface SorryProps {
@@ -8,7 +9,7 @@ interface SorryProps {
     onSecret: () => void;
 }
 
-// Cast motion components to any to avoid TypeScript errors with missing props
+// Cast motion components to any to avoid TypeScript errors with missing props with some versions
 const MotionDiv = motion.div as any;
 const MotionP = motion.p as any;
 
@@ -36,7 +37,7 @@ const Sorry: React.FC<SorryProps> = ({ onRestart, onSecret }) => {
         className="max-w-xl text-center z-10"
       >
         <h2 className="text-4xl md:text-6xl font-handwriting mb-8 text-indigo-200">
-            <TypingText text="Hey Sorry😔" speed={150} />
+            <TypingText text="I'm Sorry" speed={150} />
         </h2>
         
         <div className="space-y-6 text-lg text-indigo-200/80 font-light leading-relaxed mb-12">
@@ -65,11 +66,11 @@ const Sorry: React.FC<SorryProps> = ({ onRestart, onSecret }) => {
             transition={{ delay: 5, duration: 1 }}
         >
             <button
-                onClick={() => window.location.href = 'https://vivek2034.github.io/Happy-Birthday-Madam/'} 
+                onClick={() => alert("This page is from the past. Let's focus on our future.")} 
                 className="border border-indigo-700 text-indigo-300 hover:text-white hover:border-indigo-500 hover:bg-indigo-900/50 px-6 py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2"
             >
                 <CalendarHeart size={18} />
-                Last Year wala😅
+                Last Year
             </button>
 
             <button
@@ -79,14 +80,13 @@ const Sorry: React.FC<SorryProps> = ({ onRestart, onSecret }) => {
                 <Key size={18} />
                 Secret Message
             </button>
-
             
             <button
                 onClick={onRestart}
                 className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-indigo-900/50"
             >
                 <RefreshCw size={18} />
-                Firse dekhna hai😁??
+                See Again
             </button>
         </MotionDiv>
       </MotionDiv>
