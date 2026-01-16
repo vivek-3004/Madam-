@@ -93,7 +93,7 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
               <p className="font-handwriting text-3xl text-rose-600 mb-4">My Dearest Queen👑,</p>
               
               <p>
-                If tum ye rerad kar rahi ho, means tumne sara kuch dekh liya jo mene banaya, kaisa laga itna sb dekhne ke baad?😅, irritate?. 
+                If tum ye LETTER💌 read kar rahi ho, means tumne sara kuch dekh liya jo mene banaya, kaisa laga itna sb dekhne ke baad?😅, irritate?. 
                 Pata hai aisa bhut kuch hai jo me bol nhi pata😅 and shayd bolunga tho problem bhi ho sakti hai🙂 and hui bhi hogi sometimes bol deta hu😅, but pata mujhe acha lagta hai jb mere dimag me tumhare naam chalta hai like sandli 😊 sandli😊 sandli😊 sandli😊 sandli😊and bs asie hi bhut der tk like agib si happiness aajati hai, 
                 listen you choti bachi you are strong🦁 and smart😎 samjhi so aapne bare ulta pulta na bola karo, aaj tumhare birthday tho aaj tumhari ek special wish puri hogi ya ho chuki hogi, pata hai na mera bolne se bhut kuch hota hai🪄. .
               </p>
