@@ -1,17 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { RefreshCw, CalendarHeart } from 'lucide-react';
+import { RefreshCw, CalendarHeart, key } from 'lucide-react';
 import TypingText from './TypingText';
 
 interface SorryProps {
     onRestart: () => void;
+    onSecret: () => void;
 }
 
 // Cast motion components to any to avoid TypeScript errors with missing props
 const MotionDiv = motion.div as any;
 const MotionP = motion.p as any;
 
-const Sorry: React.FC<SorryProps> = ({ onRestart }) => {
+const Sorry: React.FC<SorryProps> = ({ onRestart, onSecret }) => {
   return (
     <div className="flex-1 flex flex-col items-center justify-center p-8 bg-[#1a1a2e] text-slate-100 min-h-[100dvh] relative overflow-hidden">
       
@@ -21,8 +22,8 @@ const Sorry: React.FC<SorryProps> = ({ onRestart }) => {
             <MotionDiv
                 key={i}
                 className="absolute bg-indigo-400 w-[1px] h-20"
-                initial={{ y: -100, x: Math.random() * window.innerWidth }}
-                animate={{ y: window.innerHeight + 100 }}
+                initial={{ y: -100, x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : 0 }}
+                animate={{ y: typeof window !== 'undefined' ? window.innerHeight + 100 : 1000 }}
                 transition={{ duration: 0.8 + Math.random(), repeat: Infinity, delay: Math.random() * 2, ease: "linear" }}
             />
         ))}
@@ -58,7 +59,7 @@ const Sorry: React.FC<SorryProps> = ({ onRestart }) => {
         </div>
 
         <MotionDiv 
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 5, duration: 1 }}
@@ -70,6 +71,15 @@ const Sorry: React.FC<SorryProps> = ({ onRestart }) => {
                 <CalendarHeart size={18} />
                 Last Year wala😅
             </button>
+
+            <button
+                onClick={onSecret}
+                className="bg-rose-900/40 border border-rose-500/50 text-rose-200 hover:bg-rose-800/60 px-6 py-3 rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-rose-950/20"
+            >
+                <Key size={18} />
+                Secret Message
+            </button>
+
             
             <button
                 onClick={onRestart}
