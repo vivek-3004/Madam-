@@ -93,22 +93,30 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
               <p className="font-handwriting text-3xl text-rose-600 mb-4">My Dearest Queen👑,</p>
               
               <p>
-                If tum ye LETTER💌 read kar rahi ho, means tumne sara kuch dekh liya jo mene banaya, kaisa laga itna sb dekhne ke baad?😅, irritate?. 
-                Pata hai aisa bhut kuch hai jo me bol nhi pata😅 and shayd bolunga tho problem bhi ho sakti hai🙂 and hui bhi hogi sometimes bol deta hu😅, but pata mujhe acha lagta hai jb mere dimag me tumhare naam chalta hai like sandli 😊 sandli😊 sandli😊 sandli😊 sandli😊and bs asie hi bhut der tk like agib si happiness aajati hai, 
-                listen you choti bachi you are strong🦁 and smart😎 samjhi so aapne bare ulta pulta na bola karo, aaj tumhare birthday tho aaj tumhari ek special wish puri hogi ya ho chuki hogi, pata hai na mera bolne se bhut kuch hota hai🪄. .
+                If tum ye LETTER💌 read kar rahi ho, means tumne sara kuch dekh liya jo mene banaya, kaisa laga itna sb dekhne ke baad?😅, irritate?
+                Pata hai aisa bhut kuch hai jo me bol nhi pata😅 and shayd bolunga tho problem bhi ho sakti hai🙂 and hui bhi hogi sometimes bol deta hu😅, but pata mujhe acha lagta hai jb mere dimag me tumhare naam chalta hai like sandli 😊 sandli😊 sandli😊 sandli😊 sandli😊and bs aise hi bhut der tk like agib si happiness aajati hai, 
+              </p>
+              <p>
+                listen you choti bachi you are strong🦁 and smart😎 samjhi so aapne bare me ulta pulta na bola karo, aaj tumhare birthday tho aaj tumhari ek special wish puri hogi ya ho chuki hogi(gili gili chuuu🪄)😂.
               </p>
 
               <p>
-                Tum mere liye home ho and mera subse bada Gift, subse badi happiness, meri motivation, meri limit breaker, mera pagalpan, meri ..... 😅. Pata every day with you feels like a gift I 
-                don't deserve, And ha me promise ki i will spend the rest of my life trying to be worthy of you🥹. 
+                Tum mere liye GHAR🏠 ho and mera subse bada Gift, subse badi happiness, meri motivation, meri limit breaker, mera pagalpan, meri ..... 😅. Pata every day with you feels like a gift I 
+                don't deserve me pagal hu bada wala and you special ho badi wali, And ha promise ki i will spend the rest of my life trying to be worthy of you🥹. 
                 I promise to be there for you in any situation😤, chahe kuch bhi ho, and listen kuch bhi ho you can say bina kuch soche don't think ki me kya sochunga ya judge karunga aisa kuch nhi karunga you also know na😁 samjhi madam jiiii😤. Me hamesha pareshan karunga aise hi😂.
                 Remember this devil will always behind you, even if me nipt gaya bhoot banke aa jaunga samjhi😎😂.
               </p>
 
               <p>
                 Hey so sorry if itna kuch read kar liya tho ab gussa aara hoga ki kya pgl hai.😅 ye sb likhne me zada dimag nhi lagaya😂.  
-                Thank you for being you. For the way you laugh, for the way you care, and HAPPY HAPPY HAPPY BIRTHDAY MADAM🥳.
+              </p>
+              <p>
+                Thank you for being you😊. For the way you laugh😁😂, for the way you care🥹, and HAPPY HAPPY HAPPY BIRTHDAY MADAM🥳.
+              </p>
+              <p>
                 yeee huureee party. Me such me bhut zada excited huuuuu🥳🥳 like dance karu🥳😂.
+              </p>
+              <p>
                 Happy birthday choti bachi😊
               </p>
 
