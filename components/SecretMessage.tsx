@@ -10,7 +10,7 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [error, setError] = useState(false);
 
-  const CORRECT_PASSWORD = 'sandli';
+  const CORRECT_PASSWORD = 'choti bachi';
 
   const handleUnlock = (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,14 +47,14 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
             </motion.div>
 
             <h2 className="text-2xl font-handwriting text-rose-300 mb-2">A Secret for You</h2>
-            <p className="text-sm text-stone-400 mb-8">Please enter the password to read the hidden message.</p>
+            <p className="text-sm text-stone-400 mb-8">Enter Karo Password Fir Hi Read Kar Paogi Hidden Message.</p>
 
             <form onSubmit={handleUnlock} className="space-y-4">
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Hint: Your Name"
+                placeholder="Hint: Me Jo Tumhe Bulata Hu!!!"
                 className={`w-full bg-stone-900/80 border ${error ? 'border-rose-500' : 'border-stone-600'} rounded-xl px-4 py-3 text-center focus:outline-none focus:border-rose-500 transition-colors tracking-widest`}
               />
               <button
@@ -90,27 +90,31 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
             </div>
 
             <div className="font-serif leading-relaxed space-y-6 text-lg relative">
-              <p className="font-handwriting text-3xl text-rose-600 mb-4">My Dearest Sandli,</p>
+              <p className="font-handwriting text-3xl text-rose-600 mb-4">My Dearest Queen👑,</p>
               
               <p>
-                If you are reading this, it means you've walked through this digital journey I built just for you. 
-                There are so many things I find hard to say out loud, but in the quiet moments, my heart 
-                is always whispering your name.
+                If tum ye rerad kar rahi ho, means tumne sara kuch dekh liya jo mene banaya, kaisa laga itna sb dekhne ke baad?😅, irritate?. 
+                Pata hai aisa bhut kuch hai jo me bol nhi pata😅 and shayd bolunga tho problem bhi ho sakti hai🙂 and hui bhi hogi sometimes bol deta hu😅, but pata mujhe acha lagta hai jb mere dimag me tumhare naam chalta hai like sandli 😊 sandli😊 sandli😊 sandli😊 sandli😊and bs asie hi bhut der tk like agib si happiness aajati hai, 
+                listen you choti bachi you are strong🦁 and smart😎 samjhi so aapne bare ulta pulta na bola karo, aaj tumhare birthday tho aaj tumhari ek special wish puri hogi ya ho chuki hogi, pata hai na mera bolne se bhut kuch hota hai🪄. .
               </p>
 
               <p>
-                You are my sanctuary and my greatest adventure. Every day with you feels like a gift I 
-                don't deserve, yet I promise to spend the rest of my life trying to be worthy of your love. 
-                I promise to be the shoulder you lean on and the hands that hold yours through every storm.
+                Tum mere liye home ho and mera subse bada Gift, subse badi happiness, meri motivation, meri limit breaker, mera pagalpan, meri ..... 😅. Pata every day with you feels like a gift I 
+                don't deserve, And ha me promise ki i will spend the rest of my life trying to be worthy of you🥹. 
+                I promise to be there for you in any situation😤, chahe kuch bhi ho, and listen kuch bhi ho you can say bina kuch soche don't think ki me kya sochunga ya judge karunga aisa kuch nhi karunga you also know na😁 samjhi madam jiiii😤. Me hamesha pareshan karunga aise hi😂.
+                Remember this devil will always behind you, even if me nipt gaya bhoot banke aa jaunga samjhi😎😂.
               </p>
 
               <p>
-                Thank you for being you. For the way you laugh, for the way you care, and for choosing me.
+                Hey so sorry if itna kuch read kar liya tho ab gussa aara hoga ki kya pgl hai.😅 ye sb likhne me zada dimag nhi lagaya😂.  
+                Thank you for being you. For the way you laugh, for the way you care, and HAPPY HAPPY HAPPY BIRTHDAY MADAM🥳.
+                yeee huureee party. Me such me bhut zada excited huuuuu🥳🥳 like dance karu🥳😂.
+                Happy birthday choti bachi😊
               </p>
 
               <div className="pt-8 flex flex-col items-end">
-                <p className="font-handwriting text-2xl mb-1">With all my love,</p>
-                <p className="font-serif font-bold text-rose-500">Forever Yours</p>
+                <p className="font-handwriting text-2xl mb-1">With all my Madness,</p>
+                <p className="font-serif font-bold text-rose-500">Forever Yours Madam</p>
                 <motion.div
                     animate={{ scale: [1, 1.2, 1] }}
                     transition={{ repeat: Infinity, duration: 2 }}
