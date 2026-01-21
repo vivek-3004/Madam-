@@ -143,7 +143,7 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
                     onClick={onNext}
                     className="bg-stone-800 text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-stone-700 transition-colors shadow-lg"
                 >
-                    Final Words
+                    wapas aajao
                     <ArrowRight size={20} />
                 </button>
             </motion.div>
