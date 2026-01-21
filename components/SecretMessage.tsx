@@ -10,7 +10,7 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [error, setError] = useState(false);
 
-  const CORRECT_PASSWORD = 'choti bachi';
+  const CORRECT_PASSWORD = 'unnao';
 
   const handleUnlock = (e: React.FormEvent) => {
     e.preventDefault();
@@ -54,7 +54,7 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Hint: Me Jo Tumhe Bulata Hu!!!"
+                placeholder="Hint:Name of the city where we met??"
                 className={`w-full bg-stone-900/80 border ${error ? 'border-rose-500' : 'border-stone-600'} rounded-xl px-4 py-3 text-center focus:outline-none focus:border-rose-500 transition-colors tracking-widest`}
               />
               <button
