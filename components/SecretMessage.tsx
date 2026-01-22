@@ -97,7 +97,12 @@ const SecretMessage: React.FC<BaseProps> = ({ onNext }) => {
                 Pata hai aisa bhut kuch hai jo me bol nhi pata😅 and shayd bolunga tho problem bhi ho sakti hai🙂 and hui bhi hogi sometimes bol deta hu😅, but pata mujhe acha lagta hai jb mere dimag me tumhare naam chalta hai like sandli 😊 sandli😊 sandli😊 sandli😊 sandli😊and bs aise hi bhut der tk like agib si happiness aajati hai, 
               </p>
               <p>
-                listen you choti bachi you are strong🦁 and smart😎 samjhi so aapne bare me ulta pulta na bola karo, aaj tumhare birthday tho aaj tumhari ek special wish puri hogi ya ho chuki hogi(gili gili chuuu🪄)😂.
+                Tum mujhe jaise normal ladke ke liye ek Percious gift jaisi ho like ki me deserve bhi karta hu ya nhi i don't know😅, I don't know how to say but you matter, Main sabke Sath hoke akela hota hu, And for me it is good because mujhe kisi or chiz se fark nhi padta like koi kuch bol de it's ok, Mene kabhi khud ko push nhi kiya tha but now I try to push myself not to become rich but to become perfect for you permanent for you😅
+                You know i hate myself when you cried because of my zid my pagalpan my batamizi itni sundar eyes ko pani pani kiya mene sorry.🥺 
+                Zada bak bak kardi, So ye bs aise hi tha dhyan mat dena zada and next lines....
+              </p>
+              <p>
+                listen you choti bachi you are strong🦁 and smart😎 samjhi so aapne bare me ulta pulta na bola karo, aaj tumhare birthday tho aaj tumhari special wishes puri hogi ya ho chuki hogi(gili gili chuuu🪄)😂.
               </p>
 
               <p>
